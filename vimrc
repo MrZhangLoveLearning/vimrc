@@ -92,26 +92,14 @@ let g:winManagerWidth = 30
 nmap <silent> <F8> :WMToggle<cr>
 "在进入vim时自动打开winmanager
 let g:AutoOpenWinManager = 1
-"change bckaground
- "syntax enable
-  "  syntax on
-
-   " set nu
-
-  "  set t_Co=256
-
-   " set background=dark
-
-  "  colorscheme solarized
 
 " For vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+
 "使用Vundle来管理Vundle
-Bundle 'gmarik/vundle'
 
 "PowerLine插件 状态栏增强展示
 Bundle 'Lokaltog/vim-powerline'
@@ -121,6 +109,7 @@ Bundle 'bash-support.vim'
 Bundle 'perl-support.vim'
 
 " Syntax
+Bundle 'gmarik/vundle'
 Bundle 'asciidoc.vim'
 Bundle 'confluencewiki.vim'
 Bundle 'html5.vim'
@@ -134,7 +123,6 @@ Bundle 'xml.vim'
 
 Bundle 'desert256.vim'
 Bundle 'Impact'
-Bundle 'matrix.vim'
 Bundle 'vibrantink'
 Bundle 'vividchalk.vim'
 
@@ -153,13 +141,12 @@ Bundle 'The-NERD-tree'
 Bundle 'AutoClose--Alves'
 Bundle 'auto_mkdir'
 Bundle 'cecutil'
-Bundle 'fcitx.vim'
+"Bundle 'fcitx.vim'
 Bundle 'FencView.vim'
 "Bundle 'FuzzyFinder'
 Bundle 'jsbeautify'
 Bundle 'L9'
 Bundle 'Mark'
-Bundle 'matrix.vim'
 Bundle 'mru.vim'
 Bundle 'The-NERD-Commenter'
 "Bundle 'project.vim'
@@ -170,6 +157,55 @@ Bundle 'taglist.vim'
 Bundle 'ZenCoding.vim'
 Bundle 'css_color.vim'
 Bundle 'hallettj/jslint.vim'
-
+Bundle 'kien/ctrlp.vim'  
+Bundle 'Valloric/YouCompleteMe'   
+Bundle "davidhalter/jedi"
+Bundle "scrooloose/syntastic"
 filetype plugin indent on "
+let g:syntastic_ignore_files=[".*\.py$"]
+"change bckaground
+" syntax enable
+ " syntax on
+
+ " set nu
+
+" set t_Co=256
+
+ "set background=blue
+
+ "colorscheme darkblue
+syntax enable
+"set background=light
+set background=dark
+colorscheme solarized
+
+"Bundle "Lokaltog/vim-powerline"
+set laststatus=2
+let g:Powerline_symbols='unicode'
+
+let g:vimgdb_debug_file = ""
+run macros/gdb_mappings.vim
+map <F2> :run macros/gdb_mappings.vim<CR>
+       
+        
+      
+     
+      
+      
+      
+      
+      
+     
+      
+     
+       
+      
+     
+     
+
+
+
+
+
+
 
